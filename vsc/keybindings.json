@@ -21,33 +21,13 @@
         "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
     },
     {
-        "key": "ctrl+k",
+        "key": "ctrl+l",
         "command": "selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
     {
-        "key": "ctrl+i",
+        "key": "ctrl+o",
         "command": "selectPrevSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
     },
-    {
-        "key": "ctrl+l",
-        "command": "cursorRight",
-        "when": "editorTextFocus && vim.mode === 'Insert'"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "cursorLeft",
-        "when": "editorTextFocus && vim.mode === 'Insert'"
-    },
-    {
-        "key": "ctrl+i",
-        "command": "cursorUp",
-        "when": "editorTextFocus && vim.mode === 'Insert' && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "cursorDown",
-        "when": "editorTextFocus && vim.mode === 'Insert' && !suggestWidgetMultipleSuggestions"
-    }
 ]
