@@ -18,8 +18,8 @@ func main() {
 	// Define flags
 	var fileFlag bool
 	var extFlag bool
-	flag.BoolVar(&fileFlag, "f", false, "Run the updateFiles command")
-	flag.BoolVar(&extFlag, "ext", false, "Run the updateExtension command")
+	flag.BoolVar(&fileFlag, "f", false, "Update files to copy")
+	flag.BoolVar(&extFlag, "ext", false, "Update extension file")
 
 	flag.Parse()
 
@@ -29,7 +29,6 @@ func main() {
 	if extFlag {
 		updateExtension()
 	}
-
 }
 
 func updateExtension() {
