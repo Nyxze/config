@@ -1,0 +1,12 @@
+ckolkman.vscode-postgres
+eamodio.gitlens
+golang.go
+ms-dotnettools.csdevkit
+ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
+ms-vscode.hexeditor
+ms-vscode.remote-explorer
+rangav.vscode-thunder-client
+visualstudiotoolsforunity.vstuc
+vscodevim.vim
+zxh404.vscode-proto3
