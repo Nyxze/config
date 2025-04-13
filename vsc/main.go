@@ -3,11 +3,36 @@ package main
 import (
 	"bufio"
 	"encoding/json"
+	"flag"
 	"fmt"
+	"io"
 	"os"
+	"strings"
+)
+
+var (
+	filesToCopy = []string{"keybindings.json", "settings.json"}
 )
 
 func main() {
+	// Define flags
+	var fileFlag bool
+	var extFlag bool
+	flag.BoolVar(&fileFlag, "f", false, "Run the updateFiles command")
+	flag.BoolVar(&extFlag, "ext", false, "Run the updateExtension command")
+
+	flag.Parse()
+
+	if fileFlag {
+		updateFiles()
+	}
+	if extFlag {
+		updateExtension()
+	}
+
+}
+
+func updateExtension() {
 	// Read JSON content from file
 	content, err := os.ReadFile("ext.txt")
 	if err != nil {
@@ -29,6 +54,39 @@ func main() {
 	if err := writeToFile("extension.txt", extensionIDs); err != nil {
 		fmt.Println("Error writing to file:", err)
 	}
+}
+func updateFiles() {
+	home := os.Getenv("HOME")
+	home = strings.ReplaceAll(home, "\\", "/")
+	path := home + "/AppData/Roaming/Code/User/"
+	for i := 0; i < len(filesToCopy); i++ {
+		src := path + filesToCopy[i]
+		dest := "Settings2/" + filesToCopy[i]
+		copyFile(src, dest)
+	}
+}
+func copyFile(srcPath, destPath string) error {
+	// Open the source file
+	srcFile, err := os.Open(srcPath)
+	if err != nil {
+		return fmt.Errorf("failed to open source file: %v", err)
+	}
+	defer srcFile.Close()
+
+	// Create the destination file
+	destFile, err := os.Create(destPath)
+	if err != nil {
+		return fmt.Errorf("failed to create destination file: %v", err)
+	}
+	defer destFile.Close()
+
+	// Copy the file content
+	_, err = io.Copy(destFile, srcFile)
+	if err != nil {
+		return fmt.Errorf("failed to copy file: %v", err)
+	}
+
+	return nil
 }
 
 // extractExtensionIDs pulls out the VSCode extension IDs from the JSON
