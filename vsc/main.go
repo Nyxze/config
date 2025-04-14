@@ -60,7 +60,7 @@ func updateFiles() {
 	path := home + "/AppData/Roaming/Code/User/"
 	for i := 0; i < len(filesToCopy); i++ {
 		src := path + filesToCopy[i]
-		dest := "Settings2/" + filesToCopy[i]
+		dest := "Settings/" + filesToCopy[i]
 		copyFile(src, dest)
 	}
 }

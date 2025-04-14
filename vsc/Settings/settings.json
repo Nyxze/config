@@ -1,159 +1,215 @@
 {
-    "editor.suggestSelection": "first",
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+  "editor.suggestSelection": "first",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.useSystemClipboard": true,
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "("
+      ],
+      "after": [
+        "i",
+        "("
+      ]
     },
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    {
+      "before": [
+        ")"
+      ],
+      "after": [
+        "a",
+        "("
+      ]
     },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+    {
+      "before": [
+        "{"
+      ],
+      "after": [
+        "i",
+        "{"
+      ]
     },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "before": [
+        "}"
+      ],
+      "after": [
+        "a",
+        "{"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "h"
+      ]
     },
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "i"
+      ]
     },
-    "explorer.confirmDelete": false,
-    "auto-close-tag.activationOnLanguage": [
-        "xml",
-        "php",
-        "blade",
-        "ejs",
-        "jinja",
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "plaintext",
-        "markdown",
-        "vue",
-        "liquid",
-        "erb",
-        "lang-cfml",
-        "cfml",
-        "HTML (Eex)"
-    ],
-    "files.associations": {
-        "*.module": "php"
+    {
+      "before": [
+        "S"
+      ],
+      "after": [
+        "I"
+      ]
     },
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.fontSize": 13,
-    "omnisharp.useModernNet": false,
-    "[python]": {
-        "editor.formatOnType": true,
-        "editor.defaultFormatter": "ms-python.vscode-pylance"
+    {
+      "before": [
+        "I"
+      ],
+      "after": [
+        "O"
+      ]
     },
-    "csharp.inlayHints.enableInlayHintsForTypes": true,
-    "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
-    "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "o"
+      ]
     },
-    "editor.cursorSurroundingLines": 20,
-    "editor.acceptSuggestionOnEnter": "smart",
-    "editor.semanticTokenColorCustomizations": {
-        "[Default Dark Modern]": {
-            "rules": {
-                "enum": "#b8d7a3",
-                "interface": "#b8d7a3",
-                "struct": "#86C691",
-                "type": "#86C691"
-            }
-        }
+    {
+      "before": [
+        "o"
+      ],
+      "after": [
+        "k"
+      ]
     },
-    "workbench.editorAssociations": {
-        "*.log": "default"
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        "l"
+      ]
     },
-    "database-client.autoSync": true,
-    "go.toolsManagement.autoUpdate": true,
-    "editor.lineNumbers": "relative",
-    "vim.useSystemClipboard": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "h"
-            ]
-        },
-        {
-            "before": [
-                "i"
-            ],
-            "after": [
-                "o"
-            ]
-        },
-        {
-            "before": [
-                "o"
-            ],
-            "after": [
-                "k"
-            ]
-        },
-        {
-            "before": [
-                ";"
-            ],
-            "after": [
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "l"
-            ],
-            "after": [
-                "j"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "h"
-            ]
-        },
-        {
-            "before": [ // To
-                "o"
-            ],
-            "after": [ // From
-                "k"
-            ]
-        },
-        {
-            "before": [
-                ";"
-            ],
-            "after": [
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "l"
-            ],
-            "after": [
-                "j"
-            ]
-        }
-    ],
-    "dotnet.formatting.organizeImportsOnFormat": true,
-    "go.inlayHints.functionTypeParameters": true,
-    "go.inlayHints.rangeVariableTypes": true,
+    {
+      "before": [
+        "l"
+      ],
+      "after": [
+        "j"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "o"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        ";"
+      ],
+      "after": [
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "("
+      ],
+      "after": [
+        "i",
+        "("
+      ]
+    },
+    {
+      "before": [
+        "{"
+      ],
+      "after": [
+        "i",
+        "{"
+      ]
+    },
+    {
+      "before": [
+        ")"
+      ],
+      "after": [
+        "a",
+        "("
+      ]
+    },
+    {
+      "before": [
+        "}"
+      ],
+      "after": [
+        "a",
+        "{"
+      ]
+    },
+    // Re-copy pasted 
+    {
+      "before": [
+        "p",
+      ],
+      "after": [
+        "p",
+        "g",
+        "v",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "l"
+      ],
+      "after": [
+        "j"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-n>": false
+  },
 }
