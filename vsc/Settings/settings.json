@@ -23,6 +23,17 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vim.useSystemClipboard": true,
+  "editor.semanticTokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "rules": {
+        "enum": "#b8d7a3",
+        "interface": "#b8d7a3",
+        "struct": "#86C691",
+        "type": "#86C691"
+      }
+    }
+  },
+  // === VIM CONFIGS ========
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": [
