@@ -22,6 +22,16 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "editor.semanticTokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "rules": {
+        "enum": "#b8d7a3",
+        "interface": "#b8d7a3",
+        "struct": "#86C691",
+        "type": "#86C691"
+      }
+    }
+  },
   // ======== VIM SETTINGS ==============
   "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
