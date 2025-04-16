@@ -22,7 +22,19 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  // ======== VIM SETTINGS ==============
   "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        ";",
+        ";"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": [
