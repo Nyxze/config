@@ -231,7 +231,9 @@
       ]
     }
   ],
+  "vim.smartRelativeLine": true,
   "vim.handleKeys": {
-    "<C-n>": false
-  },
+    "<C-n>": false,
+    "<C-r>": false
+  }
 }
