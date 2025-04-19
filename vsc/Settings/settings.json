@@ -1,239 +1,240 @@
 {
-  "editor.suggestSelection": "first",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "editor.semanticTokenColorCustomizations": {
-    "[Default Dark Modern]": {
-      "rules": {
-        "enum": "#b8d7a3",
-        "interface": "#b8d7a3",
-        "struct": "#86C691",
-        "type": "#86C691"
-      }
+    "editor.suggestSelection": "first",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "[Default Dark Modern]": {
+            "rules": {
+                "enum": "#b8d7a3",
+                "interface": "#b8d7a3",
+                "struct": "#86C691",
+                "type": "#86C691"
+            }
+        }
+    },
+    // ======== VIM SETTINGS ==============
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "k",
+                "k",
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.operatorPendingModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "("
+            ],
+            "after": [
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                ")"
+            ],
+            "after": [
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "{"
+            ],
+            "after": [
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                "}"
+            ],
+            "after": [
+                "a",
+                "{"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "s"
+            ],
+            "after": [
+                "i"
+            ]
+        },
+        {
+            "before": [
+                "S"
+            ],
+            "after": [
+                "I"
+            ]
+        },
+        {
+            "before": [
+                "I"
+            ],
+            "after": [
+                "O"
+            ]
+        },
+        {
+            "before": [
+                "i"
+            ],
+            "after": [
+                "o"
+            ]
+        },
+        {
+            "before": [
+                "o"
+            ],
+            "after": [
+                "k"
+            ]
+        },
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "l"
+            ],
+            "after": [
+                "j"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "o"
+            ],
+            "after": [
+                "k"
+            ]
+        },
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "("
+            ],
+            "after": [
+                "i",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "{"
+            ],
+            "after": [
+                "i",
+                "{"
+            ]
+        },
+        {
+            "before": [
+                ")"
+            ],
+            "after": [
+                "a",
+                "("
+            ]
+        },
+        {
+            "before": [
+                "}"
+            ],
+            "after": [
+                "a",
+                "{"
+            ]
+        },
+        // Re-copy pasted 
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
+        },
+        {
+            "before": [
+                "l"
+            ],
+            "after": [
+                "j"
+            ]
+        }
+    ],
+    "vim.smartRelativeLine": true,
+    "vim.handleKeys": {
+        "<C-n>": false,
+        "<C-p>": false,
+        "<C-r>": false
     }
-  },
-  // ======== VIM SETTINGS ==============
-  "vim.useSystemClipboard": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        ";",
-        ";"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.operatorPendingModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "("
-      ],
-      "after": [
-        "i",
-        "("
-      ]
-    },
-    {
-      "before": [
-        ")"
-      ],
-      "after": [
-        "a",
-        "("
-      ]
-    },
-    {
-      "before": [
-        "{"
-      ],
-      "after": [
-        "i",
-        "{"
-      ]
-    },
-    {
-      "before": [
-        "}"
-      ],
-      "after": [
-        "a",
-        "{"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "h"
-      ]
-    },
-    {
-      "before": [
-        "s"
-      ],
-      "after": [
-        "i"
-      ]
-    },
-    {
-      "before": [
-        "S"
-      ],
-      "after": [
-        "I"
-      ]
-    },
-    {
-      "before": [
-        "I"
-      ],
-      "after": [
-        "O"
-      ]
-    },
-    {
-      "before": [
-        "i"
-      ],
-      "after": [
-        "o"
-      ]
-    },
-    {
-      "before": [
-        "o"
-      ],
-      "after": [
-        "k"
-      ]
-    },
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        "l"
-      ]
-    },
-    {
-      "before": [
-        "l"
-      ],
-      "after": [
-        "j"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "h"
-      ]
-    },
-    {
-      "before": [
-        "o"
-      ],
-      "after": [
-        "k"
-      ]
-    },
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        "l"
-      ]
-    },
-    {
-      "before": [
-        "("
-      ],
-      "after": [
-        "i",
-        "("
-      ]
-    },
-    {
-      "before": [
-        "{"
-      ],
-      "after": [
-        "i",
-        "{"
-      ]
-    },
-    {
-      "before": [
-        ")"
-      ],
-      "after": [
-        "a",
-        "("
-      ]
-    },
-    {
-      "before": [
-        "}"
-      ],
-      "after": [
-        "a",
-        "{"
-      ]
-    },
-    // Re-copy pasted 
-    {
-      "before": [
-        "p",
-      ],
-      "after": [
-        "p",
-        "g",
-        "v",
-        "y"
-      ]
-    },
-    {
-      "before": [
-        "l"
-      ],
-      "after": [
-        "j"
-      ]
-    }
-  ],
-  "vim.smartRelativeLine": true,
-  "vim.handleKeys": {
-    "<C-n>": false,
-    "<C-r>": false
-  }
 }
