@@ -197,14 +197,6 @@
         "y"
       ]
     },
-    {
-      "before": [
-        "l"
-      ],
-      "after": [
-        "j"
-      ]
-    }
   ],
   "vim.smartRelativeLine": true,
   "vim.handleKeys": {
