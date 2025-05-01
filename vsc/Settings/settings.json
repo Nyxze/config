@@ -34,6 +34,7 @@
   },
   // ======== VIM SETTINGS ==============
   "vim.useSystemClipboard": true,
+  "vim.leader": "<Space>",
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -84,6 +85,24 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    // NAV
+    // Switch buffer
+    {
+      "before": [
+        "<S-l>"
+      ],
+      "commands": [
+        ":bnext"
+      ]
+    },
+    {
+      "before": [
+        "<S-h>"
+      ],
+      "commands": [
+        ":bprevious"
+      ]
+    },
     {
       "before": [
         "s"
@@ -115,9 +134,93 @@
       "after": [
         "o"
       ]
+    },
+    {
+      "before": [
+        "leader",
+        "a"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "l",
+        "f"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    // FILE TREE
+    {
+      "before": [
+        "leader",
+        "n",
+        "e"
+      ],
+      "commands": [
+        "workbench.explorer.fileView.focus"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "f",
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "leader",
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
     // ( quick select )
     {
       "before": [
@@ -202,6 +305,7 @@
   "vim.handleKeys": {
     "<C-n>": false,
     "<C-p>": false,
+    "<C-c>": false,
     "<C-r>": false
   },
   "git.replaceTagsWhenPull": true
