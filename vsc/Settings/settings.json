@@ -266,5 +266,7 @@
     "<C-r>": false
   },
   "git.replaceTagsWhenPull": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.cursorSurroundingLinesStyle": "all",
+  "editor.cursorSurroundingLines": 50
 }
