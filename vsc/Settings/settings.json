@@ -105,38 +105,6 @@
     },
     {
       "before": [
-        "s"
-      ],
-      "after": [
-        "i"
-      ]
-    },
-    {
-      "before": [
-        "S"
-      ],
-      "after": [
-        "I"
-      ]
-    },
-    {
-      "before": [
-        "I"
-      ],
-      "after": [
-        "O"
-      ]
-    },
-    {
-      "before": [
-        "i"
-      ],
-      "after": [
-        "o"
-      ]
-    },
-    {
-      "before": [
         "leader",
         "a"
       ],
@@ -165,7 +133,6 @@
     {
       "before": [
         "leader",
-        "l",
         "f"
       ],
       "commands": [
@@ -186,7 +153,7 @@
     {
       "before": [
         "leader",
-        "f",
+        "p",
       ],
       "commands": [
         "workbench.action.quickOpen"
@@ -210,15 +177,6 @@
       ],
       "commands": [
         "editor.action.indentLines"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
       ]
     },
     // ( quick select )
@@ -305,8 +263,8 @@
   "vim.handleKeys": {
     "<C-n>": false,
     "<C-p>": false,
-    "<C-c>": false,
     "<C-r>": false
   },
-  "git.replaceTagsWhenPull": true
+  "git.replaceTagsWhenPull": true,
+  "editor.minimap.enabled": false
 }
