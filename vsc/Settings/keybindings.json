@@ -11,7 +11,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "ctrl+j",
+        "key": "ctrl+;",
         "command": "workbench.action.togglePanel"
     },
     {
@@ -41,6 +41,16 @@
     {
         "key": "alt+k",
         "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-    }
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || s"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
 ]
