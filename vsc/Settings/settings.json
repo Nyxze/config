@@ -22,13 +22,21 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "gopls": {
+    "ui.semanticTokens": true,
+  },
+  // Blue #569CD6
+  // 
   "editor.semanticTokenColorCustomizations": {
     "[Default Dark Modern]": {
       "rules": {
-        "enum": "#b8d7a3",
-        "interface": "#b8d7a3",
-        "struct": "#86C691",
-        "type": "#86C691"
+        // Interface coloring
+        "type.interface:go": {
+          "italic": true
+        },
+        "namespace": "#f19216",
+        "variable.readonly.defaultLibrary":"#569CD6",
+        // "interface": "#b8d7a3"
       }
     }
   },
