@@ -35,6 +35,7 @@
           "italic": true
         },
         "namespace": "#f19216",
+        "variable.signature": "#DCDCAA",
         "variable.readonly.defaultLibrary":"#569CD6",
         // "interface": "#b8d7a3"
       }
